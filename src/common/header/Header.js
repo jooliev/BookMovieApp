@@ -113,7 +113,7 @@ const Header = ({ bookShow, bookShowId }) => {
             required
             type="password"
             style={{ margin: "5px 0px" }}
-          />
+          /><br/>
           <Button
             variant="contained"
             onClick={loginFormHandler}
@@ -127,9 +127,10 @@ const Header = ({ bookShow, bookShowId }) => {
           <TextField
             label="First Name"
             required
+            onGetErrorMessage="required"
             style={{ margin: "5px 0px" }}
           />
-          <TextField label="Last Name" style={{ margin: "5px 0px" }} />
+          <TextField label="Last Name" required style={{ margin: "5px 0px" }} />
           <TextField label="Email" required style={{ margin: "5px 0px" }} />
           <TextField
             label="Password"
